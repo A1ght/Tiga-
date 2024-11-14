@@ -1,0 +1,678 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 4px rgba(255, 0, 0, 0.651);
+}
+
+h1 {
+    text-align: left;
+    padding: 10px 0;
+    margin: 0 0 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #0b0be9;
+    padding: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #0b0be9;
+}
+
+.search-container {
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 33vh;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 90%;
+    max-width: 600px;
+}
+
+input[type="search"] {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+main {
+    padding: 20px;
+}
+
+.recently-container {
+    margin-bottom: 20px; /* 和下方内容的间距 */
+    text-align: left; /* 文本左对齐 */
+}
+
+.recently-container h2 {
+    margin: 0 0 20px; /* 标题的外边距 */
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: calc(25% - 20px);
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #000911;
+    text-align: center;
+    padding: 10px 20px;
+    color: #ffffff;
+    width: 100%;
+    position: fixed; /* 设置为固定位置 */
+    bottom: 0; /* 紧贴视口底部 */
+    left: 0; /* 紧贴视口左侧 */
+    right: 0; /* 紧贴视口右侧 */
+    
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.product-image {
+    width: 50%; /* 或者使用固定像素宽度 */
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.product-details {
+    width: 50%; /* 或者使用固定像素宽度 */
+}
+
+.product-details h2 {
+    margin: 0 0 10px;
+}
+
+.price {
+    margin-bottom: 10px;
+}
+
+.discounted-price {
+    font-size: 24px;
+    color: #e74c3c;
+}
+
+.original-price {
+    text-decoration: line-through;
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+.discount {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.flash-sale {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.timer {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background-color: #27ae60;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* 三个产品分栏布局 */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image {
+    width: 100%; /* 保持宽度为100% */
+    max-width: 300px; /* 设置最大宽度为300px，或根据需要调整 */
+    height: auto; /* 保持高度自适应 */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background-color: #27ae60;
+}
+
+
+
+/* 如果需要添加更多关于我们的文本内容 */
+.about-us-content p {
+    font-size: 1.2em; /* 根据需要调整文本大小 */
+    text-align: justify; /* 文本两端对齐 */
+    max-width: 800px; /* 限制文本的最大宽度 */
+    margin: 20px auto; /* 上下边距和水平自动边距来居中文本 */
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.about-us-section {
+    min-height: 100vh; /* 至少为视口高度 */
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll; /* 图片随滚动条滚动 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* 使内容水平居中 */
+    padding: 40px 0; /* 添加一些上下内边距 */
+}
+
+.about-us-section p.about-us-test {
+    color: #ffffff; /* 文本颜色设置为蓝色 */
+    /* 如果需要，可以添加更多样式 */
+}
+
+.about-us-section h2 {
+    color: #ea0000; /* 字体颜色设置为黄色 */
+    font-size: 4em; /* 设置为较大的字体大小，类似于标题 */
+    margin: 0.5em 0; /* 添加外边距 */
+}
+
+
+.contact-content {
+    display: flex;
+    flex-direction: column; /* 改为垂直排列 */
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.leadership-row {
+    display: flex; /* 水平排列子元素 */
+    justify-content: space-between; /* 子元素之间的间距 */
+    align-items: flex-start; /* 子元素在交叉轴上对齐 */
+    width: 100%; /* 占满容器宽度 */
+    margin-bottom: 20px; /* 与下方内容的间距 */
+}
+.leadership-info, .leadership-image-container {
+    flex-basis: calc(50% - 20px);
+ }
+
+.leadership-info {
+    flex-basis: 60%; 
+    margin-right: 20px; 
+}
+
+.contact-content > div {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.leadership-image-container img, .flowchart img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.contact-content h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.contact-content p {
+    color: #666;
+    font-size: 1em;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffdd00;
+    color: #0e0000;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* 适配小屏幕设备 */
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 页脚样式保持不变 */
+
+.leadership {
+    /* 保持现有样式 */
+    position: relative; /* 添加相对定位，以便图片可以绝对定位到这个容器 */
+}
+
+.leadership-image-container {
+    flex-basis: 30%; /* 根据需要调整宽度 */
+    text-align: center; /* 图片和文本居中 */
+}
+
+.leadership-image-container img {
+    width:30%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.image-caption {
+    /* 文本框样式 */
+    margin: 0; /* 移除默认外边距 */
+    padding: 10px; /* 文本框内边距 */
+    background-color: rgba(255, 255, 255, 0.7); /* 文本框背景色 */
+    border-radius: 4px; /* 文本框边框圆角 */
+    text-align: center; /* 文本居中 */
+}
+
+.image-caption p {
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    text-align: center;
+}
+.flowchart {
+    margin-bottom: 20px; /* 与页脚的间距 */
+    position: relative; /* 为绝对定位提供参考 */
+}
+
+.flowchart img {
+    width: 100%;
+    max-width: 600px; /* 或者根据需要设置一个最大宽度 */
+    border-radius: 8px;
+    margin-bottom: 10px; /* 图片和文本框之间的间距 */
+}
+.leadership-image-container {
+    position: relative; /* 为绝对定位提供参考 */
+    text-align: center; /* 图片和文本居中 */
+}
+
+.leadership-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.image-caption {
+    display: inline-block; /* 使绝对定位的 p 标签能够相对于它定位 */
+    background-color: #0b9aa1; /* 黄色背景 */
+    padding: 5px 10px; /* 内边距 */
+    border-radius: 4px; /* 边框圆角 */
+    color: #333; /* 文本颜色 */
+    font-weight: bold; /* 加粗文本 */
+}
+
+.image-caption p {
+    margin: 0; /* 移除默认外边距 */
+}
+.additional-image-container {
+    position: absolute; /* 绝对定位相对于flowchart */
+    right: 0; /* 将图片容器放置在flowchart的右侧 */
+    top: 0; /* 根据需要调整垂直位置 */
+    width: 500px; /* 设置图片容器的宽度 */
+    height: 200%; /* 图片容器高度占满flowchart的高度 */
+    text-align: center; /* 图片水平居中 */
+}
+
+.additional-image {
+    max-width: 100%; /* 图片最大宽度为容器宽度 */
+    height: auto; /* 高度自适应 */
+    border-radius: 8px; /* 图片边框圆角 */
+}
+
+.news-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.news-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+.product-intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.product-image {
+    flex-shrink: 0; /* 防止图片被压缩 */
+    width: 50%; /* 根据需要调整图片大小 */
+    margin-right: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-description {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; /* 与图片保持一定间距 */
+}
+
+.product-description h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 40px; /* 增大字体大小 */
+}
+.product-description p {
+    margin-top: 5px; /* 与上面的标题保持一定间距 */
+    color: #666; /* 字体颜色 */
+    font-size: 14px; /* 小号字体 */
+}
+/* 省略其他样式 */
+
+.product-description {
+    /* ... 其他样式 ... */
+    position: relative; /* 为按钮容器提供定位上下文 */
+}
+
+.product-description p {
+    margin-bottom: 10px; 
+}
+
+.button-container {
+    text-align: right; }
+
+
+.button-container button {
+    display: inline-block; 
+    margin-right: 5px; 
+    padding: 10px 15px; 
+    font-size: 14px; 
+    color: #fff; 
+    background-color: #000000; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    .button-container button:nth-child(3),
+.button-container button:nth-child(4) {
+    padding: 30px 40px; 
+   
+}
+}
+
+.button-container button:hover {
+    background-color: #555; 
+}
+
+
+.text-box {
+    display: inline-block; 
+    margin: 0 5px; 
+    padding: 10px 15px; 
+    font-size: 14px; 
+    color: #333; 
+    background-color: #fff; 
+    border-radius: 4px;}
+
+    .button-container > button:first-child,
+.button-container > button:nth-child(2),
+.button-container > .text-box {
+    display: inline-block;
+    vertical-align: middle; 
+    
+}
+.product-description .additional-content {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    clear: both; 
+}
+
+    .product-description .additional-content p {
+        margin: 0;
+        font-size: 16px;
+        color: #333;
+    }
+.product-image h3 {
+    margin: 0; 
+    padding: 10px 0; 
+    font-size: 1.5em; 
+    color: #333; 
+}
+.additional-content h3 {
+    margin: 0; 
+    padding: 10px 0; 
+    font-size: 1.5em; 
+    color: #333; 
+    
+}
+
+.news-item {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+}
+
+.news-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.news-item button {
+    margin: 10px 0; 
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #020202;
+    background-color: #f7f9fa;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.news-item button:hover {
+    background-color: #a4b6c2;
+    border-color: #000; 
+}
+
+.button-image {
+    width: 300px; 
+    height: auto;
+    margin-left: 20px; 
+    margin-right: 0; 
+}
+
+.news-item .content-wrapper {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin-right: 20px; 
+}
+
+.news-item p,
+.news-item h3 {
+    margin: 0;
+    text-align: right; 
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    margin-right: 20px; 
+}
+
+    .content-wrapper p,
+    .content-wrapper h3 {
+        margin: 0 0 10px; 
+        text-align: left;
+    }
+
+.content-wrapper button {
+    margin-top: 16px; 
+}
+
+
+.button-image {
+    width: 300px;
+    height: auto;
+    margin-left: 20px; 
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
