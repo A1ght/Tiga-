@@ -1,4 +1,4 @@
-Tiga（Zhu Gejia）
+//Tiga（Zhu Gejia）
 
 body {
     margin: 0;
@@ -134,13 +134,13 @@ footer {
 }
 
 .product-image {
-    width: 50%; /* 或者使用固定像素宽度 */
+    width: 50%; 
     border-radius: 8px;
     margin-right: 20px;
 }
 
 .product-details {
-    width: 50%; /* 或者使用固定像素宽度 */
+    width: 50%; 
 }
 
 .product-details h2 {
@@ -218,7 +218,7 @@ footer {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: calc(33.333% - 20px); /* 三个产品分栏布局 */
+    width: calc(33.333% - 20px);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -226,9 +226,9 @@ footer {
 }
 
 .product-image {
-    width: 100%; /* 保持宽度为100% */
-    max-width: 300px; /* 设置最大宽度为300px，或根据需要调整 */
-    height: auto; /* 保持高度自适应 */
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
     border-radius: 8px;
     margin-bottom: 10px;
 }
