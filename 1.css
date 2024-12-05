@@ -87,12 +87,12 @@ main {
 }
 
 .recently-container {
-    margin-bottom: 20px; /* 和下方内容的间距 */
-    text-align: left; /* 文本左对齐 */
+    margin-bottom: 20px; 
+    text-align: left;
 }
 
 .recently-container h2 {
-    margin: 0 0 20px; /* 标题的外边距 */
+    margin: 0 0 20px; 
 }
 
 .image-gallery {
@@ -118,10 +118,10 @@ footer {
     padding: 10px 20px;
     color: #ffffff;
     width: 100%;
-    position: fixed; /* 设置为固定位置 */
-    bottom: 0; /* 紧贴视口底部 */
-    left: 0; /* 紧贴视口左侧 */
-    right: 0; /* 紧贴视口右侧 */
+    position: fixed;
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
     
 }
 
