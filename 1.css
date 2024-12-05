@@ -255,12 +255,12 @@ footer {
 
 
 
-/* 如果需要添加更多关于我们的文本内容 */
+
 .about-us-content p {
-    font-size: 1.2em; /* 根据需要调整文本大小 */
-    text-align: justify; /* 文本两端对齐 */
-    max-width: 800px; /* 限制文本的最大宽度 */
-    margin: 20px auto; /* 上下边距和水平自动边距来居中文本 */
+    font-size: 1.2em; 
+    text-align: justify; 
+    max-width: 800px; 
+    margin: 20px auto; 
 }
 
 html, body {
