@@ -357,7 +357,7 @@ html, body {
     background-color: #0056b3;
 }
 
-/* 适配小屏幕设备 */
+
 @media (max-width: 768px) {
     .contact-content {
         grid-template-columns: 1fr;
@@ -373,7 +373,7 @@ html, body {
 
 .leadership-image-container {
     flex-basis: 30%; 
-    text-align: center; /* 图片和文本居中 */
+    text-align: center; 
 }
 
 .leadership-image-container img {
@@ -384,12 +384,12 @@ html, body {
 
 
 .image-caption {
-    /* 文本框样式 */
-    margin: 0; /* 移除默认外边距 */
-    padding: 10px; /* 文本框内边距 */
-    background-color: rgba(255, 255, 255, 0.7); /* 文本框背景色 */
-    border-radius: 4px; /* 文本框边框圆角 */
-    text-align: center; /* 文本居中 */
+
+    margin: 0; 
+    padding: 10px; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 4px; 
+    text-align: center; 
 }
 
 .image-caption p {
@@ -400,19 +400,19 @@ html, body {
     text-align: center;
 }
 .flowchart {
-    margin-bottom: 20px; /* 与页脚的间距 */
-    position: relative; /* 为绝对定位提供参考 */
+    margin-bottom: 20px; 
+    position: relative; 
 }
 
 .flowchart img {
     width: 100%;
-    max-width: 600px; /* 或者根据需要设置一个最大宽度 */
+    max-width: 600px; 
     border-radius: 8px;
-    margin-bottom: 10px; /* 图片和文本框之间的间距 */
+    margin-bottom: 10px; 
 }
 .leadership-image-container {
-    position: relative; /* 为绝对定位提供参考 */
-    text-align: center; /* 图片和文本居中 */
+    position: relative; 
+    text-align: center; 
 }
 
 .leadership-image {
@@ -422,12 +422,12 @@ html, body {
 }
 
 .image-caption {
-    display: inline-block; /* 使绝对定位的 p 标签能够相对于它定位 */
-    background-color: #0b9aa1; /* 黄色背景 */
-    padding: 5px 10px; /* 内边距 */
-    border-radius: 4px; /* 边框圆角 */
-    color: #333; /* 文本颜色 */
-    font-weight: bold; /* 加粗文本 */
+    display: inline-block; 
+    background-color: #0b9aa1; 
+    padding: 5px 10px; 
+    border-radius: 4px; 
+    color: #333; 
+    font-weight: bold; 
 }
 
 .image-caption p {
