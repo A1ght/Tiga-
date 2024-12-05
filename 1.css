@@ -270,16 +270,16 @@ html, body {
     padding: 0;
 }
 .about-us-section {
-    min-height: 100vh; /* 至少为视口高度 */
+    min-height: 100vh; 
     background-image: url('1.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: scroll; /* 图片随滚动条滚动 */
+    background-attachment: scroll; 
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center; /* 使内容水平居中 */
-    padding: 40px 0; /* 添加一些上下内边距 */
+    text-align: center; 
+    padding: 40px 0; 
 }
 
 .about-us-section p.about-us-test {
